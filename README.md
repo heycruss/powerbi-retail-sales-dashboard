@@ -128,44 +128,75 @@ This new key uniquely identifies each product and was subsequently used as the p
 
 # Measures
 
-![Measures](Images/measures.png)
-
-Main KPIs:
-
-- Total Sales
-- Total Orders
-- Distinct Customers
-- Orders per Customer
-- Repeat Customer Rate
-- Average Shipping Days
-
-Explain any interesting measure.
+![Measures](Measures.png)
 
 ---
 
 # Dynamic Features
 
-Explain:
+The dashboard was designed to maximize flexibility while keeping the user interface simple and intuitive.
 
-- Field Parameters
-- Dynamic charts
-- Dynamic KPIs
-- Dynamic titles
-- Tooltip (if added)
+Instead of creating multiple visuals for different analyses, **Field Parameters** were implemented to allow users to dynamically switch both the displayed metric and the analysis dimension.
 
-Include screenshots.
+This approach significantly reduces the number of required visuals while providing a much more interactive reporting experience.
 
 ---
 
-# Dashboard Pages
+## Dynamic KPI Selection
 
-## Executive Overview
+Users can select the business metric they want to analyze using a Field Parameter.
 
-![Overview](Images/page_overview.png)
+Available KPIs include:
 
-Explain the page.
+- Total Sales
+- Total Orders
+- Distinct Customers
+- Orders per Customer
+
+All report visuals automatically update based on the selected KPI.
+
+![KPI Selection](Images/kpi_parameter.png)
 
 ---
+
+## Dynamic Dimension Selection
+
+A second Field Parameter allows users to choose how the selected KPI should be analyzed.
+
+Available dimensions include:
+
+- Ship Mode
+- Category
+- Customer Segment
+- Region
+
+The same visual can therefore answer completely different business questions without duplicating report pages.
+
+---
+
+## Dynamic Visuals
+
+The dashboard includes several visuals that automatically respond to both Field Parameters:
+
+- Trend Line
+- Donut Chart
+- Top Products
+- Matrix
+
+This provides a highly flexible analytical experience while maintaining a clean dashboard layout.
+
+
+---
+
+## Interactive Filtering
+
+Additional slicers allow users to further refine the analysis by selecting different values across the available dimensions.
+
+Every visual on the page reacts instantly to user selections, enabling ad-hoc business analysis.
+
+---
+
+
 
 ## Filters
 
@@ -173,39 +204,6 @@ Explain available filters.
 
 ---
 
-## Visualizations
-
-Explain:
-
-- KPI Cards
-- Line Chart
-- Donut Chart
-- Top Products
-- Matrix
-
----
-
-# DAX Examples
-
-Example 1
-
-```DAX
--- Paste measure here
-```
-
-Explain what it does.
-
----
-
-Example 2
-
-```DAX
--- Paste measure here
-```
-
-Explain what it does.
-
----
 
 # Skills Demonstrated
 
@@ -219,36 +217,6 @@ Explain what it does.
 
 ---
 
-# What I Learned
-
-Write here:
-
-- Problems you found.
-- Decisions you made.
-- Things you would improve.
-- Lessons learned.
-
----
-
-# Repository Structure
-
-```text
-Retail Sales Dashboard
-
-│
-├── Dashboard.pbix
-├── Dataset.csv
-├── README.md
-│
-└── Images
-    ├── dashboard.png
-    ├── data_model.png
-    ├── measures.png
-    ├── page_overview.png
-    └── ...
-```
-
----
 
 # Author
 
@@ -258,4 +226,4 @@ Data Analyst
 
 Tokyo, Japan
 
-LinkedIn:
+LinkedIn: www.linkedin.com/in/ramon-garcia-rico-8702202a0
