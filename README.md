@@ -98,7 +98,7 @@ As shown below, some records share the same **Product ID** while referring to **
 
 **Example:**
 
-![Duplicate Product Example](Images/Duplicate_ID_Example.png)
+![Duplicate Product Example](Duplicate_ID_Example.png)
 
 To identify every affected record, a temporary table was created containing only the following columns:
 
@@ -109,7 +109,7 @@ To identify every affected record, a temporary table was created containing only
 
 After removing duplicates, the table was grouped by **Product ID** to detect identifiers associated with more than one product.
 
-![Duplicated Product IDs](Images/Duplicated_IDs.png)
+![Duplicated Product IDs](Duplicated_IDs.png)
 
 A total of **32 duplicated Product IDs** were found.
 
