@@ -8,12 +8,6 @@ The objective of this project was to transform a flat transactional dataset into
 
 The dashboard was designed as an analytical tool, allowing users to dynamically change both the business metric and the analysis dimension, providing a flexible experience beyond a traditional static report.
 
-Explain in a few sentences:
-
-- What is the purpose of the dashboard?
-- Who is the target user?
-- What business problem does it solve?
-
 ---
 
 # Dashboard Preview
