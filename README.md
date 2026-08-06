@@ -12,7 +12,7 @@ The dashboard was designed as an analytical tool, allowing users to dynamically 
 
 # Dashboard Preview
 
-![Dashboard](Images/dashboard.png)
+![Dashboard](Retail-Sales-Dashboard.png)
 
 ---
 
