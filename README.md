@@ -4,7 +4,9 @@
 
 # Overview
 
-> Brief description of the project.
+The objective of this project was to transform a flat transactional dataset into a well-structured Business Intelligence solution. This involved designing a Star Schema data model, identifying and resolving data quality issues (such as duplicated identifiers and inconsistent records), creating reusable DAX measures, and developing an interactive Power BI dashboard that enables users to explore the data dynamically rather than relying on static reports.
+
+The dashboard was designed as an analytical tool, allowing users to dynamically change both the business metric and the analysis dimension, providing a flexible experience beyond a traditional static report.
 
 Explain in a few sentences:
 
