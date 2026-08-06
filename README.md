@@ -128,7 +128,7 @@ This new key uniquely identifies each product and was subsequently used as the p
 
 # Measures
 
-![Measures](Measure.png)
+![Measures](Measures.png)
 
 ---
 
