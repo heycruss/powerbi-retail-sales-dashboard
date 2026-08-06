@@ -75,14 +75,18 @@ Some additional transformations were required during the modeling process, inclu
 
 ## Cleaning Process
 
-Explain briefly:
+Since the original dataset consisted of a single flat CSV file, the first step was to transform it into a dimensional model suitable for Business Intelligence reporting.
 
-- Data types
-- Removed duplicates?
-- Renamed columns?
-- Missing values?
-- Date table
-- etc.
+Four potential dimension tables were identified:
+
+- **DIMCustomer**, using the existing Customer ID.
+- **DIMProduct**, using a custom Product Key (explained below).
+- **DIMShipMode**, generated from the distinct shipping methods.
+- **DIMLocation**, combining Country, State, City and Postal Code.
+
+After evaluating the model, **DIMLocation** was intentionally omitted. Implementing it would have required joining the fact table on four different columns, adding unnecessary complexity with limited analytical value. Considering the size of the dataset and the expected use cases, keeping the geographical attributes in the fact table resulted in a simpler and more efficient model.
+
+The final model therefore consists of one fact table and four dimension tables, following a Star Schema design.
 
 ---
 
