@@ -26,8 +26,8 @@ The dashboard was designed as an analytical tool, allowing users to dynamically 
 ### Dataset Information
 
 - Rows: 9800 
-- Columns: Row ID | Order ID | Order Date | Ship Date | Ship Mode | Customer ID | Customer Name | Segment | Country | City | State | Postal Code | Region | Product ID | Category | Sub-Category | Product Name | Sales
-- Period: 2015-2028
+- Columns: 18
+- Period: 2015-2018
 - Country: United States
 
 
@@ -56,6 +56,20 @@ The report focuses on providing an intuitive and interactive user experience, en
 ---
 
 # Data Model
+
+Fact Table
+
+• FACTSales
+
+Dimension Tables
+
+• DIMCustomer
+
+• DIMProduct
+
+• DIMShipMode
+
+• DIMDate
 
 ![Data Model](Retail-Sales-Dashboard-Model.png)
 
