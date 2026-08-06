@@ -109,7 +109,7 @@ To identify every affected record, a temporary table was created containing only
 
 After removing duplicates, the table was grouped by **Product ID** to detect identifiers associated with more than one product.
 
-![Duplicated Product IDs](Duplicated_IDs.png)
+![Duplicated Product IDs](Duplicated_ID's.png)
 
 A total of **32 duplicated Product IDs** were found.
 
