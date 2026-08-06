@@ -21,13 +21,15 @@ The dashboard was designed as an analytical tool, allowing users to dynamically 
 ### Source
 
 - Superstore Sales Dataset (Kaggle)
+- https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting/data
 
 ### Dataset Information
 
-- Rows:
-- Columns:
-- Period:
-- Country:
+- Rows: 9800 
+- Columns: Row ID | Order ID | Order Date | Ship Date | Ship Mode | Customer ID | Customer Name | Segment | Country | City | State | Postal Code | Region | Product ID | Category | Sub-Category | Product Name | Sales
+- Period: 2015-2028
+- Country: United States
+
 
 Brief description of the dataset.
 
