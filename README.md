@@ -142,6 +142,13 @@ This new key uniquely identifies each product and was subsequently used as the p
 
 # Measures
 
+- Total Sales
+- Total Orders
+- Distinct Customers
+- Orders per Customer
+- Repeat Customer Rate
+- Average Shipping Days
+
 ![Measures](Measures.png)
 
 ---
@@ -208,14 +215,15 @@ Every visual on the page reacts instantly to user selections, enabling ad-hoc bu
 
 ---
 
+# What I Learned
 
+During this project I reinforced several Business Intelligence concepts, particularly dimensional modeling, DAX optimization and dashboard flexibility.
 
-## Filters
+One of the most interesting challenges was identifying duplicated Product IDs referring to different products and designing a custom Product Key to maintain a valid Star Schema.
 
-Explain available filters.
+I also explored Field Parameters to reduce the number of visuals while increasing report flexibility and improving the end-user experience.
 
 ---
-
 
 # Skills Demonstrated
 
