@@ -57,16 +57,6 @@ The report focuses on providing an intuitive and interactive user experience, en
 
 # Data Model
 
-### Fact Table
-
-- FACTSales
-
-### Dimension Tables
-
-- DIMCustomer
-- DIMProduct
-- DIMShipMode
-- DIMDate
 
 ![Data Model](Retail-Sales-Dashboard-Model.png)
 
