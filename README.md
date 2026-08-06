@@ -92,15 +92,37 @@ The final model therefore consists of one fact table and four dimension tables, 
 
 ## Product Key Issue
 
-Explain the duplicated Product ID problem.
+During the data preparation process, an inconsistency was identified in the original dataset.
 
-Example:
+As shown below, some records share the same **Product ID** while referring to **different products**. This prevents the creation of a proper **Product Dimension**, since the key column of a dimension table must contain unique values in order to establish a one-to-many relationship with the fact table.
 
-Original Product ID:
+**Example:**
 
-![Duplicate Product](Images/product_issue.png)
+![Duplicate Product Example](Images/Duplicate_ID_Example.png)
 
-Explain your solution.
+To identify every affected record, a temporary table was created containing only the following columns:
+
+- Product ID
+- Category
+- Sub-Category
+- Product Name
+
+After removing duplicates, the table was grouped by **Product ID** to detect identifiers associated with more than one product.
+
+![Duplicated Product IDs](Images/Duplicated_IDs.png)
+
+A total of **32 duplicated Product IDs** were found.
+
+### Solution
+
+To guarantee a unique key for every product, a new **Product Key** was created by concatenating the following attributes:
+
+- Product ID
+- Category
+- Sub-Category
+- Product Name
+
+This new key uniquely identifies each product and was subsequently used as the primary key of **DIMProduct** and as the foreign key in **FACTSales**, ensuring a valid one-to-many relationship.
 
 ---
 
