@@ -155,8 +155,6 @@ Available KPIs include:
 
 All report visuals automatically update based on the selected KPI.
 
-![KPI Selection](Images/kpi_parameter.png)
-
 ---
 
 ## Dynamic Dimension Selection
