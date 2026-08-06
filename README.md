@@ -31,32 +31,43 @@ The dashboard was designed as an analytical tool, allowing users to dynamically 
 - Country: United States
 
 
-Brief description of the dataset.
+The dataset contains transactional retail sales records from a fictional US-based superstore between 2015 and 2018. Each row represents a single product sold within an order and includes information about the customer, product, shipping details, geographic location, and sales amount. The data enables the analysis of sales performance across different customer segments, product categories, regions, and shipping methods.
 
 ---
 
 # Business Requirements
 
+The primary objective of this dashboard is to provide a flexible analytical tool rather than a static report.
+
+Users can dynamically select both the business metric and the analysis dimension, allowing them to explore the dataset from multiple perspectives without the need for multiple report pages.
+
 The dashboard was designed to answer questions such as:
 
-- Which customer segment generates the highest sales?
-- Which product category performs best?
-- How have sales evolved over time?
-- Which shipping mode is used the most?
-- ...
+- Which product category, customer segment, region or shipping mode generates the highest sales?
+- How do different KPIs evolve over time?
+- Which products contribute the most to total sales?
+- How many orders does the average customer place?
+- What percentage of customers are repeat customers?
+- How long does it take, on average, to ship an order?
+- How do business insights change when switching between different metrics and dimensions?
+
+The report focuses on providing an intuitive and interactive user experience, enabling business users to perform ad-hoc analysis with minimal effort.
 
 ---
 
 # Data Model
 
-![Data Model](Images/data_model.png)
+![Data Model](Retail-Sales-Dashboard-Model.png)
 
-Explain:
 
-- Why you chose a Star Schema.
-- Fact table.
-- Dimension tables.
-- Relationships.
+The report was built following a **Star Schema** approach to improve performance, simplify DAX calculations and provide a scalable model.
+
+The model consists of:
+
+- **1 Fact Table** containing transactional sales data.
+- **4 Dimension Tables** providing descriptive attributes for Customers, Products, Dates and Shipping information.
+
+Some additional transformations were required during the modeling process, including the creation of a custom Product Key to resolve duplicated Product IDs referring to different products.
 
 ---
 
