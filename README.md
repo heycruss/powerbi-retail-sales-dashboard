@@ -58,7 +58,7 @@ The report focuses on providing an intuitive and interactive user experience, en
 # Data Model
 
 
-![Data Model](Retail-Sales-Dashboard-Model.png)
+![Data Model](Images/Retail-Sales-Dashboard-Model.png)
 
 
 The report was built following a **Star Schema** approach to improve performance, simplify DAX calculations and provide a scalable model.
@@ -99,7 +99,7 @@ As shown below, some records share the same **Product ID** while referring to **
 
 **Example:**
 
-![Duplicate Product Example](Duplicate_ID_Example.png)
+![Duplicate Product Example](Images/Duplicate_ID_Example.png)
 
 To identify every affected record, a temporary table was created containing only the following columns:
 
@@ -110,7 +110,7 @@ To identify every affected record, a temporary table was created containing only
 
 After removing duplicates, the table was grouped by **Product ID** to detect identifiers associated with more than one product.
 
-![Duplicated Product IDs](Duplicated_ID's.png)
+![Duplicated Product IDs](Images/Duplicated_ID's.png)
 
 A total of **32 duplicated Product IDs** were found.
 
@@ -136,7 +136,7 @@ This new key uniquely identifies each product and was subsequently used as the p
 - Repeat Customer Rate
 - Average Shipping Days
 
-![Measures](Measures.png)
+![Measures](Images/Measures.png)
 
 ---
 
